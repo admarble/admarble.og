@@ -449,6 +449,13 @@ ul.transition li {
 .load-img {
     @include absolute-center;
     width: 10%;
+    padding: 4rem 0;
+    @include breakpoint(medium only) { 
+        width: 20%;
+    }
+    @include breakpoint(small only) { 
+        width: 25%;
+    }
 }
 .am-profile {
     visibility: hidden;
