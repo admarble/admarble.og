@@ -21,6 +21,7 @@
     "foundation-sites": "^6.6.3",
     "gasparesganga-jquery-loading-overlay": "^2.1.7",
     "gsap": "^3.4.2",
+    "imagekit-javascript": "^1.2.3",
     "jquery": "^3.5.1",
     "marquee3000": "^1.1.1",
     "what-input": "^5.2.10"
