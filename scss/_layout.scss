@@ -18,6 +18,9 @@ body {
     background-color: $brand-purple;
     color: $primary-color;
 }
+picture {
+    background-color: $brand-purple;
+}
 
 .project-thumb-container {
     background-color: $brand-purple;
@@ -216,6 +219,8 @@ button.next:disabled {
         @include absolute-center;
         max-width: 60%;   
         max-height: 80%;
+        // width: 500px;
+        height: auto;
     }
     video {
         @include absolute-center;
@@ -328,6 +333,9 @@ button.next:disabled {
         }
         &:hover {
             color: $yeah-gray;
+        }
+        &:focus {
+            color: $brand-orange;
         }
     }
 }
@@ -459,4 +467,24 @@ ul.transition li {
 }
 .am-profile {
     visibility: hidden;
+}
+.m-by {
+    display: none;
+}
+#m-gmail, #m-outlook, #m-open, #m-copy {
+    font-family: $body-font-family;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+#m-title {
+    padding-top:16px;
+    font-family: $body-font-family;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+div.m-modal-content {
+    border-radius: 0 !important;
+    background-color: $brand-purple !important;
 }
