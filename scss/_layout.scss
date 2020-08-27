@@ -465,6 +465,20 @@ ul.transition li {
         width: 25%;
     }
 }
+#loading-text {
+    text-align: center;
+    // margin-top: 130px;
+    font-family: 'Travaille-v4.95', monospace;
+}
+.loading-letter {
+    font-family: $body-font-family;
+    font-weight: 700;
+    font-style: normal;;
+    color: $brand-blue;
+    margin-left: 5px;
+    display: inline-block;
+    margin-top: 220px;
+}
 .am-profile {
     visibility: hidden;
 }
