@@ -9,7 +9,7 @@ tl.to("#loading-screen2", {immediateRender: true, smoothOrigin:true, delay: 1, d
 .from(".branding", {immediateRender: true, smoothOrigin:true, duration: 3, scale: 1.2, ease: "circ.out"},"-=1.2")
 
 var tl2 = gsap.timeline({defaults:{}})
-tl2.from(".loading-letter", {immediateRender: true, smoothOrigin:true, y: 20, stagger: 0.1, repeat: -1, repeatDelay:0.2, yoyo: true})
+tl2.to(".loading-letter", {immediateRender: true, smoothOrigin:true, y: 20, skewX:45, stagger: 0.1, repeat: -1, repeatDelay:0.2, yoyo: true})
 
 // document.getElementById('cta').addEventListener('click',() => {
 //     tl.reversed() ? tl.play() : tl.reverse()

@@ -469,15 +469,20 @@ ul.transition li {
     text-align: center;
     // margin-top: 130px;
     font-family: 'Travaille-v4.95', monospace;
+    margin-top: 90px;
 }
 .loading-letter {
     font-family: $body-font-family;
     font-weight: 700;
+    font-size: 0.75rem;
     font-style: normal;;
     color: $brand-blue;
     margin-left: 5px;
     display: inline-block;
-    margin-top: 220px;
+    @include breakpoint(small only) { 
+        // font-size: 0.5rem;
+    }
+
 }
 .am-profile {
     visibility: hidden;
