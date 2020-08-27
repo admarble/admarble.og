@@ -339,6 +339,11 @@ button.next:disabled {
         }
     }
 }
+.footer-nav {
+    @include breakpoint(small only) { 
+        margin-bottom: 30px;
+    }
+}
 .divider {
     margin-top: 5px;
 }
@@ -479,10 +484,6 @@ ul.transition li {
     color: $brand-blue;
     margin-left: 5px;
     display: inline-block;
-    @include breakpoint(small only) { 
-        // font-size: 0.5rem;
-    }
-
 }
 .am-profile {
     visibility: hidden;
