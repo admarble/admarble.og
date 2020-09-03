@@ -6,6 +6,15 @@
 @import 'layout';
 @import 'fonts';
 
+@import 'components/fonts';
+@import 'components/layout';
+@import 'components/ticker';
+
+//External libraries
+@import url("https://unpkg.com/flickity@2.2.1/dist/flickity.css");
+@import url("https://use.typekit.net/kdt8rfe.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+
 // Global styles
 @include foundation-global-styles;
 @include foundation-forms;
