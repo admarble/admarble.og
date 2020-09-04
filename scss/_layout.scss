@@ -105,8 +105,8 @@ picture {
         color: $black;
     }
     @include breakpoint(small only) { 
-        font-size: 0.4rem;
-        letter-spacing: 0.15rem;
+        font-size: 0.5rem;
+        letter-spacing: 0.17rem;
     }
 }
 .cap-wrap {
