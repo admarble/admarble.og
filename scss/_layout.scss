@@ -33,7 +33,6 @@ picture {
     @include breakpoint(small only) { 
         height: 550px;
     }
-
 }
 
 // .grid-container {
@@ -101,14 +100,16 @@ picture {
     font-size: 0.75rem;
     letter-spacing: 0.22rem;
     padding: 0.5rem 0 1rem 0;
+    @include breakpoint(small only) { 
+        font-size: 0.5rem;
+        letter-spacing: 0.16rem;
+        font-weight: 900;  
+    }
     a {
         color: $black;
-    }
-    @include breakpoint(small only) { 
-        -webkit-text-size-adjust: none;
-        text-size-adjust: none;
-        font-size: 10px;
-        letter-spacing: 0.17rem;
+        &:hover {
+            font-weight: 900;  
+        }
     }
 }
 .cap-wrap {
@@ -127,6 +128,12 @@ picture {
     margin-right: 7px;
     margin-bottom: -1px;
     font-weight: 550;
+    // display: none;
+    @include breakpoint(small only) { 
+        margin-bottom: -1px;
+        height: 8px;
+        width: 8px;    
+    }
 }
 .self-init {
     background-color: $secondary-color;
@@ -174,23 +181,23 @@ button.flickity-button.flickity-prev-next-button {
 }
 button.flickity-button.flickity-prev-next-button.next {
     right: 0;
-    cursor: url(/etc/img/arrow-forward.svg),auto;
+    cursor: url(../img/arrow-forward.svg),auto;
     :disabled {
-        cursor: url(/etc/img/arrow-back.svg),auto;
+        cursor: url(../img/arrow-back.svg),auto;
     }
 }
 button.flickity-button.flickity-prev-next-button.previous {
     right: 0;
-    cursor: url(/etc/img/arrow-back.svg),auto;
+    cursor: url(../img/arrow-back.svg),auto;
     :disabled {
-        cursor: url(/etc/img/arrow-forward.svg),auto;
+        cursor: url(../img/arrow-forward.svg),auto;
     }
 }
 button.previous:disabled {
-    cursor: url(/etc/img/arrow-forward.svg),auto;
+    cursor: url(../img/arrow-forward.svg),auto;
 }
 button.next:disabled {
-    cursor: url(/etc/img/arrow-back.svg),auto;
+    cursor: url(../img/arrow-back.svg),auto;
 }
 
 .carousel {
@@ -246,7 +253,19 @@ button.next:disabled {
     }
   }
   .carousel-status {
-    font-size: 24px;
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+	width: 70px;
+	height: 20px;
+    margin-left: -35px;
+    color: white;
+    font-family: $body-font-family;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    padding: 0.5rem 0 1rem 0;
   }
   /* position dots in carousel */
 .flickity-page-dots {
@@ -264,6 +283,7 @@ button.next:disabled {
   .flickity-page-dots .dot.is-selected {
     background: $black;
     transition: 0.3ms;
+    border-radius: 0;
     &:hover {
         background: $black;
     }
@@ -381,7 +401,7 @@ button.next:disabled {
     font-style: italic;
     // font-size: 1rem;
 }
-.about-body {
+.about {
         // background: linear-gradient(0deg, rgba(14,14,14,1) 0%, rgba(162,95,10,1) 16%, rgba(0,0,255,1) 27%, rgba(255,143,102,1) 52%, rgba(206,180,255,1) 65%, rgba(255,143,102,1) 100%);
         height: auto;
         background: $secondary-color;
@@ -515,4 +535,7 @@ ul.transition li {
 div.m-modal-content {
     border-radius: 0 !important;
     background-color: $brand-purple !important;
+}
+.carousel-container {
+    position: relative;
 }
